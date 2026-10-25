@@ -1,0 +1,114 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(251, 255, 12);
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+nav{
+    padding: 20px 20px;
+    margin: 10px 10 px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: teal;
+}
+nav .part2{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 58px;
+    
+}
+nav h2{
+    font-size: 33px;
+    font-weight: 100px;
+}
+nav a{
+    font-size: 25px;
+    color: black;
+    text-decoration: solid;
+font-weight: 800;
+}
+section{
+    padding: 60px 30px;
+}
+section .name {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    column-gap: 30px;
+    row-gap: 20px;
+    align-items: start;
+}
+
+section .name > h1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+section .video{
+    height: 100px;
+    width: 450px;
+    background-color: black;
+    border-radius: 55px;
+    border: solid black;
+    grid-column: 2;
+    grid-row: 1;
+    
+   overflow: hidden;
+}
+.video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+section .name2{
+    display: contents;
+}
+.name h1,
+.name2 h1{
+  font-size: 110px;
+    font-family: monospace;
+    text-transform: uppercase;
+    line-height: 100px;  
+}
+.name2 h1{
+    grid-row: 2;
+    grid-column: 1;
+}
+.name2 p {
+    font-size: 35px;
+    width: 450px;
+    margin-top: 30px;
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.image {
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 450px;
+    height: 280px;
+
+    border: 4px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -360px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
